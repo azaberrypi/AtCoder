@@ -1,15 +1,17 @@
 #include <iostream>
 
 int main() {
-    int n, a, b;
-    std::cin >> n >> a >> b;
+    char x, y;
+    std::cin >> x >> y;
+    int a = int(x);
+    int b = int(y);
 
-    int sum = n * a;
-    if (sum >= b) {
-        std::cout << b << std::endl;
-    } else {
-        std::cout << sum << std::endl;
+    if (a == b) {
+        std::cout << '=' << std::endl;
+    } else if (a > b) {
+        std::cout << '>' << std::endl;
+    } else if (a < b) {
+        std::cout << '<' << std::endl;
     }
-
     return 0;
 }
